@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="photo.jpg">
+		<link rel="stylesheet" type="text/css" href="style4.css">
+<head>
+	<title>FranticBomb | Random Name Gen</title>
+</head>
+<nav>
+	<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+	<ul>
+	<li><a href="home.html">Home</a></li>
+  <li><a class="active" href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+</nav>
+<body>
+	<a href="projects.html" class="linkbtn">Go Back</a>
+	<script>
+		var NumberOfWords = 28
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[1] = "James"
+words[2] = "Mary"
+words[3] = "John"
+words[4] = "Patricha"
+words[5] = "Robert"
+words[6] = "Jennifer"
+words[7] = "Michael"
+words[8] = "Linda"
+words[9] = "William"
+words[10] = "Elizabeth"
+words[11] = "Richard"
+words[12] = "Susan"
+words[13] = "Joesph"
+words[14] = "Jessica"
+words[15] = "Thomas"
+words[16] = "Sarah"
+words[17] = "Charles"
+words[18] = "Margareth"
+words[19] = "Christopher"
+words[20] = "Karen"
+words[21] = "Daniel"
+words[22] = "Nancy"
+words[23] = "Matthew"
+words[24] = "Lisa"
+words[25] = "Anthony"
+words[26] = "Betty"
+words[27] = "Donald"
+words[28] = "Dorothy"
+words[29] = "Mark"
+words[30] = "Sandra"
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+frm.WordBox.value = words[rnd]
+}
+	</script>
+	<h1 align="center">Random Name Generator</h1>
+	<FORM NAME="WordForm">  
+<INPUT TYPE=TEXT NAME="WordBox" id="wordbox"><BR>
+<INPUT TYPE=BUTTON VALUE="Generate" onClick="PickRandomWord(document.WordForm);" id="button">
+</FORM>
+</body>
+</html>

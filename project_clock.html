@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html>  
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="icon" href="photo.jpg">
-<head>
-	<title>FranticBomb | Projects</title>
-</head>
 <nav>
-	<style>
+    <style>
 
 ul {
   list-style-type: none;
@@ -36,18 +33,40 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 </style>
-	<ul>
+    <ul>
   <li><a href="home.html">Home</a></li>
   <li><a class="active" href="projects.html">Projects</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li><a href="about.html">About</a></li>
 </ul>
 </nav>
-<body>
-	<h1 align="center">Projects</h1>
+<head>
+    <title>FranticBomb | Clock</title>
+    <a href="projects.html" class="linkbtn">Go Back</a>
+    <h1>Clock</h1>
+</head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
 
-	<a href="project_calculator.html" class="linkbtn">Calculator</a>
-	<a href="project_clock.html" class="linkbtn">Clock</a>
-	<a href="project_random.html" class="linkbtn">Random Name Generator</a>
+<body onload="startTime()">
+
+<div class="clock" id="txt"></div>
+
 </body>
 </html>
