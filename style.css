@@ -5,3 +5,21 @@ body {
 	padding: 0;
 	margin: 0;
 }
+.linkbtn {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 15px;
+}
+.linkbtn:hover{
+	transform: scale(1.2);
+	color: #f1f1f1;
+}
