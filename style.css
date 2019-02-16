@@ -6,7 +6,7 @@ body {
 	margin: 0;
 }
 .linkbtn {
-  background-color: #e74c3c;
+  background-color:#c0392b ;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -18,12 +18,14 @@ body {
   cursor: pointer;
   padding: 15px;
   margin: 15px;
+  border: 1px solid #e74c3c;
 }
 .linkbtn:hover{
 	transform: scale(1.2);
 	color: #f1f1f1;
+	background:#e74c3c ;
 }
 .clock{
-	font-size: 15px;
+	font-size: 25px;
 	color: #2d3436;
 }
