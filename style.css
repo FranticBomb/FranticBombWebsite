@@ -29,3 +29,31 @@ body {
 	font-size: 25px;
 	color: #2d3436;
 }
+.restartbtn{
+  font-size: 25px;
+  color: black;
+  font-family: open sans; 
+  padding: 10px;
+  margin: 15px;
+  border-color: #22a6b3; 
+  background-color: #7ed6df;
+}
+.restartbtn:hover{
+  color: #f1f1f1;
+  transform: scale(1.2); 
+
+
+}
+.controllbtn{
+  font-size: 15px;
+  color: white;
+  font-family: open sans;
+  padding: 5px;
+  margin: 5px;
+  border-color: #22a6b3; 
+  background-color: #7ed6df;
+}
+.controllbtn:hover{
+  color: black;
+  transform: scale(1.2);
+}
