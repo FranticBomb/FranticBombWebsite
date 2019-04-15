@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" href="photo.jpg">
-		<nav>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="photo.jpg">
+<nav>
 	<style>
 
 ul {
@@ -35,20 +34,21 @@ li a:hover:not(.active) {
 }
 </style>
 	<ul>
-	<li><a href="home.html">Home</a></li>
+  <li><a href="home.html">Home</a></li>
   <li><a class="active" href="projects.html">Projects</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li><a href="about.html">About</a></li>
 </ul>
 </nav>
-	<title>FranticBomb | Games</title>
-	<a href="projects.html" class="linkbtn">Go Back</a>
-	<h1>Games</h1>
-
+<head>
+	<link rel="stylesheet" type="text/css" href="camerastyle.css">
+	<title>FranticBomb | Camera</title>
+</head>
 <body>
-
-    <br>
-    <a href="game_maze.html" class="linkbtn">Maze</a>
-    <a href="projects.html" class="linkbtn">Game 2</a>
+	<div class="booth">
+		<video id="video" width="400" height="300" autoplay></video>
+		<canvas width="400" height="300"></canvas>
+	</div>
+	<script src="cameraapp.js"></script>
 </body>
 </html>
